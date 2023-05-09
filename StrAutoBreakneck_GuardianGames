@@ -1,0 +1,340 @@
+function OnEvent(event, arg)
+if (event == "MOUSE_BUTTON_RELEASED" and arg == 6) then
+
+		if (not IsKeyLockOn("capslock")) then
+			PressKey("capslock")
+			Sleep(5)
+			ReleaseKey("capslock")
+
+		end
+    fullauto()
+	end
+end
+
+function fullauto()
+  while (IsKeyLockOn("capslock")) do
+    tower_strHunt()
+    PressKey("w")
+    enterBreakneck()
+    strHunterBreakneck(5)
+    turnInBont()
+  end
+end
+
+function enterBreakneck()
+  PressKey("w")
+  Sleep(10)
+  PressKey("lshift")
+  Sleep(2900)
+  PressAndReleaseKey("spacebar")
+  Sleep(500)
+  PressAndReleaseKey("spacebar")
+  Sleep(500)
+  PressAndReleaseKey("spacebar")
+  Sleep(200)
+  ReleaseKey("w")
+  ReleaseKey("lshift")
+  for i=0,50,1 do
+    MoveMouseRelative(18,-10)
+    Sleep(10)
+  end
+  Sleep(500)
+  PressKey("Q")
+  Sleep(1000)
+  PressAndReleaseKey("C")
+  ReleaseKey("Q")
+  Sleep(500)
+  PressKey("w")
+  Sleep(10)
+  PressKey("lshift")
+  Sleep(1000)
+  for i=0,50,1 do
+    MoveMouseRelative(-18,0)
+    Sleep(10)
+  end
+  Sleep(1300)
+  for i=0,50,1 do
+    MoveMouseRelative(-18,0)
+    Sleep(10)
+  end
+  Sleep(300)
+  PressAndReleaseKey("spacebar")
+  Sleep(500)
+  PressAndReleaseKey("spacebar")
+  Sleep(1500)
+  for i=0,50,1 do
+    MoveMouseRelative(-18,0)
+    Sleep(10)
+  end
+  Sleep(300)
+  for i=0,50,1 do
+    MoveMouseRelative(18,0)
+    Sleep(10)
+  end
+  Sleep(1000)
+  for i=0,50,1 do
+    MoveMouseRelative(-36,0)
+    Sleep(10)
+  end
+  Sleep(200)
+  for i=0,50,1 do
+    MoveMouseRelative(18,0)
+    Sleep(10)
+  end
+  Sleep(1000)
+  ReleaseKey("w")
+  ReleaseKey("lshift")
+  for i=0,50,1 do
+    MoveMouseRelative(-36,0)
+    Sleep(10)
+  end
+  Sleep(500)
+  PressKey("E")
+  Sleep(1500)
+  ReleaseKey("E")
+  Sleep(2000)
+  PressKey("w")
+  Sleep(10)
+  PressKey("lshift")
+  Sleep(4200)
+  for i=0,50,1 do
+    MoveMouseRelative(9,2)
+    Sleep(10)
+  end
+  for i=1,3,1 do
+    PressKey("spacebar")
+    Sleep(800)
+    ReleaseKey("spacebar")
+    Sleep(230)
+  end
+  PressKey("Q")
+  Sleep(1000)
+  for i=0,50,1 do
+    MoveMouseRelative(-9,0)
+    Sleep(10)
+  end
+  PressAndReleaseKey("C")
+  ReleaseKey("Q")
+  ReleaseKey("w")
+  ReleaseKey("lshift")
+  Sleep(1500)
+  PressKey("A")
+  Sleep(700)
+  ReleaseKey("A")
+  PressKey("w")
+  Sleep(10)
+  PressKey("lshift")
+  Sleep(2700)
+  for i=0,50,1 do
+    MoveMouseRelative(-18,0)
+    Sleep(10)
+  end
+  Sleep(1200)
+  for i=0,50,1 do
+    MoveMouseRelative(18,0)
+    Sleep(10)
+  end
+  Sleep(1500)
+  ReleaseKey("w")
+  ReleaseKey("lshift")
+  PressAndReleaseKey("C")
+  Sleep(500)
+  run(2000)
+  Sleep(500)
+  PressAndReleaseKey("3")
+  Sleep(1000)
+  for i=0,20,1 do
+    MoveMouseRelative(0,50)
+    Sleep(10)
+  end
+  Sleep(200)
+  PressAndReleaseMouseButton(1)
+  Sleep(15000)
+end
+
+function turnInBont()
+  PressAndReleaseKey("M")
+  Sleep(500)
+  PressAndReleaseKey("A")
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(11,-7)
+    Sleep(10)
+  end
+  Sleep(1000)
+  PressAndReleaseMouseButton(1)
+  Sleep(500)
+  PressAndReleaseKey("M")
+  Sleep(500)
+end
+
+function tower_strHunt()
+  PressAndReleaseKey("M")
+  Sleep(500)
+  PressAndReleaseKey("D")
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(0,9)
+    Sleep(10)
+  end
+  Sleep(500)
+  PressAndReleaseMouseButton(1)
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(-1,-10)
+    Sleep(10)
+  end
+  MoveMouseRelative(-5,-7)
+  Sleep(1000)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(15,9)
+    Sleep(10)
+  end
+  Sleep(500)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(60000)
+  --in tower
+  run(5000)
+  Sleep(500)
+  PressKey("E")
+  Sleep(1500)
+  ReleaseKey("E")
+  Sleep(2000)
+  PressKey("S")
+  Sleep(2800)
+  ReleaseKey("S")
+  PressKey("A")
+  Sleep(1200)
+  ReleaseKey("A")
+  Sleep(500)
+  PressKey("E")
+  Sleep(1000)
+  ReleaseKey("E")
+  Sleep(1500)
+  for i=0,10,1 do
+    MoveMouseRelative(6+3,8)
+    Sleep(10)
+  end
+  Sleep(2000)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(500)
+  PressAndReleaseKey("M")
+  Sleep(500)
+  PressAndReleaseKey("D")
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(-16,-9)
+    Sleep(10)
+  end
+  MoveMouseRelative(-4,-10)
+  Sleep(1000)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  for i=0,10,1 do
+    MoveMouseRelative(1,3)
+    Sleep(10)
+  end
+  Sleep(2000)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(19,8)
+    Sleep(10)
+  end
+  MoveMouseRelative(0,5)
+  Sleep(500)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(1000)
+  for i=0,10,1 do
+    MoveMouseRelative(-19,-7)
+    Sleep(10)
+  end
+  Sleep(500)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(1000)
+  for i=0,10,1 do
+    MoveMouseRelative(19,8)
+    Sleep(10)
+  end
+  Sleep(500)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(32000)
+end
+
+function strHunterBreakneck(t)
+  for i=1,t,1 do
+    PressKey("D")
+    Sleep(350)
+    ReleaseKey("D")
+    Sleep(100)
+    run(1000)
+    Sleep(100)
+    PressAndReleaseKey("C")
+    Sleep(500)
+    PressKey("w")
+    Sleep(500)
+    ReleaseKey("w")
+    Sleep(500)
+    PressKey("e")
+    Sleep(2500)
+    ReleaseKey("e")
+    Sleep(1500)
+    PressKey("D")
+    Sleep(300)
+    ReleaseKey("D")
+    run(2500)
+    PressAndReleaseKey("f")
+    Sleep(1800)
+    PressAndReleaseMouseButton(3)
+    Sleep(500)
+    run(1300)
+    PressAndReleaseMouseButton(1)
+    Sleep(700)
+    PressAndReleaseMouseButton(1)
+    Sleep(1000)
+    PressKey("D")
+    Sleep(100)
+    ReleaseKey("D")
+    run(2700)
+    PressAndReleaseMouseButton(3)
+    Sleep(1000)
+    PressKey("A")
+    Sleep(300)
+    ReleaseKey("A")
+    run(5000)
+    PressAndReleaseMouseButton(3)
+    Sleep(700)
+    PressAndReleaseMouseButton(1)
+    Sleep(1000)
+    PressAndReleaseKey("3")
+    Sleep(1000)
+    for i=0,20,1 do
+      MoveMouseRelative(0,50)
+      Sleep(10)
+    end
+    Sleep(200)
+    PressAndReleaseMouseButton(1)
+    Sleep(15000)
+  end
+end
+
+function run(t)
+	PressKey("w")
+	Sleep(10)
+	PressKey("lshift")
+	Sleep(t)
+	ReleaseKey("w")
+	ReleaseKey("lshift")
+end
+
+
+
